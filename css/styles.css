@@ -492,8 +492,7 @@ ul {
 
 .main-category {
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
+  line-height: 1.875;
   color: var(--brand-color-gray);
 }
 
