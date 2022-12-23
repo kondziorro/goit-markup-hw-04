@@ -182,7 +182,6 @@ ul {
 .order-btn {
   width: 200px;
   height: 50px;
-  color: var(--brand-color-white);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -190,10 +189,12 @@ ul {
   cursor: pointer;
   border: none;
   outline: none;
+  color: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   margin-top: 30px;
   margin-bottom: 106px;
-  background-color: var(--brand-color-blue);
 }
 
 .order {
