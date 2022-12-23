@@ -5,7 +5,7 @@ body {
   font-weight: 700;
   font-size: 1.125rem;
   margin: auto;
-  width: 1600;
+  width: 1600px;
   font-weight: normal;
 }
 
@@ -31,6 +31,7 @@ ul {
   --icons-inactive: #afb1b8;
   --footer-social-icon-bg: rgba(255, 255, 255, 0.1);
   --border-radius: 4px;
+  --portfolio-border: #eeeeee;
 }
 
 h1,
@@ -477,6 +478,8 @@ ul {
 .portfolio-btn:focus {
   color: var(--brand-color-white);
   background-color: var(--brand-color-blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-project {
@@ -497,13 +500,12 @@ ul {
 .portfolio-project {
   margin: 0px;
   margin-top: 34px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-figcaption {
-  border-right: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-  border-left: 1px solid #ececec;
-  padding: 20px 24px;
+.portfolio-item:hover {
+  box-shadow: 0px 1px;
 }
 
 .list-item {
@@ -519,4 +521,15 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-text {
+  padding: 20px 24px;
+  border: 1px solid var(--portfolio-border);
+  border-top: none;
 }
