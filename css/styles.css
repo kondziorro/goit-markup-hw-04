@@ -1,16 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--brand-color-light-black);
-  background: var(--brand-color-white);
-  font-weight: 700;
-  font-size: 1.125rem;
-  margin: auto;
-  width: 1600px;
-  font-weight: normal;
-}
-
-a {
-  text-decoration: none;
 }
 
 ul {
@@ -47,7 +37,7 @@ ul {
   border: 0px;
 }
 
-.logo-web {
+.logo {
   color: var(--brand-color-blue);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -57,7 +47,7 @@ ul {
   text-decoration: none;
 }
 
-.logo-studio {
+.studio-black {
   color: var(--brand-color-black);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -218,6 +208,10 @@ ul {
   padding: 94px 0px;
 }
 
+.job-section {
+  margin-top: -94px;
+}
+
 .section-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -276,7 +270,6 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color-light-black);
-  text-align: center;
 }
 
 .business-activity {
@@ -388,6 +381,8 @@ ul {
 
 .footer {
   background-color: var(--brand-background-color-gray);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-container {
@@ -396,7 +391,7 @@ ul {
   gap: 70px;
 }
 
-.footer-logo1 {
+.studio-white {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -404,16 +399,6 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--brand-color-white);
-}
-
-.footer-logo2 {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--brand-color-blue);
 }
 
 .address {
@@ -441,6 +426,10 @@ ul {
   color: var(--brand-color-blue);
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .footer-joinus-box {
   padding-top: 12px;
 }
@@ -462,6 +451,7 @@ ul {
 /* Portoflio */
 
 .portfolio-btn {
+  font-family: 'Roboto', sans-serif;
   width: 121px;
   height: 38px;
   color: var(--brand-color-black);
