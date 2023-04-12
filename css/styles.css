@@ -1,12 +1,3 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--brand-color-light-black);
-}
-
-ul {
-  list-style: none;
-}
-
 :root {
   --brand-color-black: #000000;
   --brand-color-light-black: #212121;
@@ -24,17 +15,19 @@ ul {
   --portfolio-border: #eeeeee;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--brand-color-light-black);
+}
+
 ul {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+  list-style: none;
 }
 
 .logo {
@@ -120,25 +113,16 @@ ul {
   color: var(--brand-color-blue);
 }
 
-.control-item:hover .contact-icon,
-.contact-item:focus .contact-icon {
-  fill: var(--brand-color-blue);
-}
-
 .contact-item {
   text-emphasis: none;
   text-decoration: none;
   color: var(--brand-color-gray);
+  fill: currentColor;
 }
 
 .contact-icon {
   vertical-align: middle;
   margin-right: 10px;
-  fill: var(--brand-color-gray);
-}
-
-.smartphone-icon {
-  vertical-align: text-top;
 }
 
 .body-bookmark:hover,
@@ -290,9 +274,8 @@ ul {
 /* social icons */
 
 .social-icon-svg {
-  --color3: currentColor;
+  fill: var(--icons-inactive);
 }
-
 .social-icons {
   display: flex;
   gap: 10px;
@@ -350,16 +333,18 @@ ul {
   color: var(--icons-inactive);
 }
 
+.team-social-icon:is(:hover, :focus) > .social-icon-svg {
+  fill: var(--brand-color-white);
+}
+
 /* clients section */
 
 .clients-icon-svg {
-  --color2: currentColor;
-  --color3: currentColor;
+  fill: var(--icons-inactive);
 }
 
 .clients-icon {
   display: block;
-  padding: 16px 32px;
   border: 1px solid var(--icons-inactive);
   border-radius: var(--border-radius);
   color: var(--icons-inactive);
@@ -368,7 +353,10 @@ ul {
 .clients-icon:hover,
 .clients-icon:focus {
   border: 1px solid var(--brand-color-blue);
-  color: var(--brand-color-blue);
+}
+
+.clients-icon:is(:hover, :focus) > .clients-icon-svg {
+  fill: var(--brand-color-blue);
 }
 
 .flex-container {
@@ -381,8 +369,6 @@ ul {
 
 .footer {
   background-color: var(--brand-background-color-gray);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-container {
@@ -448,20 +434,23 @@ ul {
   color: var(--brand-color-white);
 }
 
+.footer-social-icon > .social-icon-svg {
+  fill: var(--brand-color-white);
+}
+
 /* Portoflio */
 
 .portfolio-btn {
   font-family: 'Roboto', sans-serif;
-  width: 121px;
-  height: 38px;
   color: var(--brand-color-black);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  line-height: 26px;
   letter-spacing: 0.03em;
   border: none;
   outline: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .portfolio-btn:hover,
